@@ -1,0 +1,21 @@
+# ── Telegram ─────────────────────────────────────────────────────────────────
+pyrogram==2.0.106
+TgCrypto==1.2.5          # C-extension for faster crypto; strongly recommended
+
+# ── Redis ─────────────────────────────────────────────────────────────────────
+redis==5.0.8              # ships redis.asyncio (replaces aioredis)
+
+# ── Web (health-check server) ─────────────────────────────────────────────────
+aiohttp==3.9.5
+
+# ── yt-dlp (video downloader) ─────────────────────────────────────────────────
+yt-dlp>=2024.8.6          # always stay on a recent version for site compat
+
+# ── HTTP client (thumbnail fetching from yt-dlp info) ────────────────────────
+# aiohttp already covers this, but keep explicit for clarity
+
+# ── Environment variables ─────────────────────────────────────────────────────
+python-dotenv==1.0.1
+
+# ── Optional: faster JSON (used by redis, aiohttp internally) ─────────────────
+# ujson==5.10.0           # uncomment if you want slightly faster JSON parsing
